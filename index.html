@@ -27,12 +27,27 @@
             margin: 20px 0;
         }
         
-        .image-grid img {
+        .image-grid img, .image-container img {
             width: 100%;
             height: 200px;
             object-fit: cover;
             border-radius: 10px;
             cursor: pointer;
+        }
+        
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: #fff;
+            text-align: center;
         }
         
         .button {
@@ -51,7 +66,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>BOOM BOOM !!!</h1>>
+        <h1>BOOM BOOM !!!</h1>
         <h2>December Hotel Special</h2>
         <p>Enjoy a luxurious stay at our hotel during the holiday season! Carrefour Coteplage 22 #1 Haiti Cherie!</p>
         <p>Call or WhatsApp <a href="tel:+50935737556" style="color: #fff;">509 3573 7556</a> for booking or email <a href="mailto:lubinronald36@gmail.com" style="color: #fff;">lubinronald36@gmail.com</a></p>
@@ -60,11 +75,12 @@
             <img src="f2.jpg" alt="Hotel Amenities" onclick="window.open('f2.jpg', '_blank')">
             <img src="f3.jpg" alt="Delicious Food" onclick="window.open('f3.jpg', '_blank')">
             <img src="f4.jpg" alt="Relaxing Atmosphere" onclick="window.open('f4.jpg', '_blank')">
+            <div class="image-container">
+                <img src="f5.jpg" alt="Bar Open 24/24" onclick="window.open('f5.jpg', '_blank')">
+                <div class="overlay-text">Bar Open 24/24</div>
+            </div>
         </div>
         <a href="tel:+50935737556" class="button">Book Now</a>
-    </div><div class="image-container">
-  <img src="f5.jpg" alt="Bar Open 24/24">
-  <div class="overlay-text">Bar Open 24/24</div>
-</div>
+    </div>
 </body>
 </html>
